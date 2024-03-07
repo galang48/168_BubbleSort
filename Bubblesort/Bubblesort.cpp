@@ -55,7 +55,10 @@ void bubbleSortArray() {
 }
 
 int main() {
-    std::cout << "Hello World!\n";
+    input();                //Memanggil read()
+    bubbleSortArray();      //Memanggil bubblesortarray()
+    display();              //Memanggil display()
+    return 0;
 }
 
 
