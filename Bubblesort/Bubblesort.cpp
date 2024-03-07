@@ -23,7 +23,7 @@ void input() {          // Procedure untuk input
     cout << "=====================" << endl;          // Output ke layar
 
     for (int i = 0; i < n; i++) {                       // Looping dengan i dimulai dari o hingga n-1
-        cout << "Data ke-" << (i + 1) << "; ";          // Output ke layar
+        cout << "Data ke-" << (i + 1) << ": ";          // Output ke layar
         cin >> a[i];        // Input dari pengguna
     }
 }
@@ -43,8 +43,8 @@ void display() {            // Prosedur umtuk menampilkan hasil
 void bubbleSortArray() {
     int pass = 1;
 
-    for (pass; pass <= n - 1; pass + 1) {               //Looping dengan i dimulai dari 1 hingga n-1
-        for (int j = 0; j <= n - 1 - pass; j++) {       //Looping dengan j dimulai dari 0 hingga n-1
+    for (pass; pass <= n - 1; pass ++) {               //Looping dengan i dimulai dari 1 hingga n-1
+        for (int j = 0; j < n - 1 - pass; j++) {       //Looping dengan j dimulai dari 0 hingga n-1
             if (a[j] > a[j + 1]) {                      //Jika nilai pada a[j] lebih besar dari a[j+1]
                 int temp = a[j];                        //Simpan nilai a[j] ke variabel sementara temp
                 a[j] = a[j + 1];                        //Assign nilai a[j+1] ke a[j]
