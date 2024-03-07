@@ -25,9 +25,23 @@ void input() {          // Procedure untuk input
     for (int i = 0; i < n; i++) {                       // Looping dengan i dimulai dari o hingga n-1
         cout << "Data ke-" << (i + 1) << "; ";          // Output ke layar
         cin >> a[i];        // Input dari pengguna
-
     }
 }
+
+void display() {            // Prosedur umtuk menampilkan hasil
+    cout << endl;           // Output baris kosong
+    cout << "================================" << endl;     //Output ke layar
+    cout << "Elemen Array yang telah tersusun" << endl;     //Output ke layar
+    cout << "================================" << endl;     //Output ke layar
+    for (int j = 0; j < n; j++) {               //Looping dengan j dimulai dari 0 hingga n-1
+        cout << "Data Ke-" << j + 1 << ": ";
+        cout << a[j] << endl;                   //Output ke layar
+
+        cout << endl;                           //Output baris kosong
+    }
+
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
